@@ -1,18 +1,25 @@
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<script src="src/app.js" ></script>
-<link rel="stylesheet" type="text/css" href="src/app.css">
+<!DOCTYPE html>
+<html>
 
- 
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <script src="src/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="src/app.css" />
+    <title>Hava Durumu</title>
+</head>
 
+<body>
+    <div style="
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 5px;
+      ">
+        <input id="key" oninput="upadatetable(1)" placeholder="buraya metin girin" style="width: var(--winput)" />
+        <select id="filter" onchange="upadatetable(0)" style="width: var(--sinput)">
+        <option disabled selected>Filteme Seçenekleri</option>
+      </select>
+    </div>
+</body>
 
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 5px;">
-    <input
-            id="key" oninput="upadatetable(1)" placeholder="buraya metin girin"
-            style=" width:var(--winput); ">
-    <select id="filter" onchange="upadatetable(0)" style="width:var(--sinput)">
-        <option disabled selected> Filteme Seçenekleri</option>
-
-    </select>
-</div>
- 
-
+</html>
